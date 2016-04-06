@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cus"  ng-class="{'notFlow': bodyCss}">
+<head>
+  <meta charset="UTF-8">
+  <title>Cusbee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="The Cusbee IT outsource company helps its partners to achieve their
+    goals and maintain their business since 2012. Highly qualified team of professionals offers a wide range of services
+    concerning comprehensive project support. Innovative approach to solving complex tasks allows us to develop the commercial
+    activity of our clients and bring it to a new level.Cusbee is a research and development ukrainian company.">
+    <link rel="canonical" href="http://cusbee.co/">
+    <link href="ico/favicon.jpg" rel="shortcut icon">
+
+  <meta property="og:title" content="Cusbee outsource company">
+  <meta property="og:site_name" content="Cusbee">
+  <meta property="og:url" content="http://cusbee.co/">
+  <meta property="og:description" content="The Cusbee IT outsource company helps its
+    partners to achieve their goals and maintain their business since 2012. Highly qualified team of
+    professionals offers a wide range of services concerning comprehensive project support. Innovative a
+    pproach to solving complex tasks allows us to develop the commercial activity of our clients and bring it to
+    a new level.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:image" content="http://cusbee.co/images/cusbee-logo.png">
+  <meta property="fb:app_id" content="842677682517322">
+  <meta name="google-site-verification" content="YoBEjytusjSNmXQuuGL4gGblKlMwdVuUVylUaEj-9P0">
+
+  <link rel="stylesheet" href="css/slaider/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/media.css">
+
+  <script src="js/jquery.min.js"></script>
+
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-route/angular-route.min.js"></script>
+  <script src="js/controller.js"></script>
+
+</head>
+<body ng-controller="mainCtrl as main" ng-class="{'notFlow': bodyCss}">
+  <div class="sidebar" ng-class="{'active': main.slider}">
+    <button ng-click="main.slider = !main.slider" id="close"><img src="img/close.png" alt=""></button>
+    <div class="menu-block">
+      <div class="left-block">
+        <ul>
+          <li ng-click="main.slider = !main.slider"><a href="#/technologies">How we do</a></li>
+          <li ng-click="main.slider = !main.slider"><a href="#/work">What we create</a></li>
+          <li ng-click="main.slider = !main.slider"><a href="#/about">What we do</a></li>
+          <li ng-click="main.slider = !main.slider"><a href="#/service">Our expertice</a></li>
+          <li ng-click="main.slider = !main.slider"><a href="#/contact">Get in touch</a></li>
+        </ul>
+        <div class="calculator">
+           <a href="views/Team-Builder/builder.html" target="_blank">Calculator</a>
+        </div>
+      </div>
+      <div class="right-block">
+        <div class="number">
+          <span>office@website.com</span>
+          <p>(912)555-1234</p>
+        </div>
+        <div class="social">
+          <a href="https://www.facebook.com/cusbee"><i class="fa fa-facebook"></i></a>
+          <a href="www.twitter.com"><i class="fa fa-twitter"></i></a>
+          <a href="www.google.com"><i class="fa fa-google"></i></a>
+        </div>
+        <div class="blog">
+          <a href="#/blog" ng-click="main.slider = !main.slider">Blog</a>
+          <a href="#/careers" ng-click="main.slider = !main.slider">Careers</a>
+        </div>
+    </div>
+    </div>
+  </div>
+  <ng-view></ng-view>
+
+</body>
+</html>
