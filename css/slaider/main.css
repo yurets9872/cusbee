@@ -31,8 +31,10 @@
 }
 
 .example .frame {
-    margin: 30px auto 0px;
+    /*margin: 30px auto 0px;*/
     height: 400px;
+    margin: 0 auto 0;
+    /*padding-top: 4.5vh;*/
 }
 
 .example .frame ul {
@@ -61,6 +63,11 @@
 }*/
 .example .frame ul li.active {
     opacity: 1;
+}
+.example .frame ul li.active a {
+    -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
 /*.example .frame img {width: 70%;}*/
@@ -100,7 +107,7 @@
 
 /*.example .scrollbar { margin: 30px auto 0px; width: 940px; height: 2px; line-height: 0; }*/
 .example .scrollbar {
-    margin: 30px auto 0px;
+    margin: 0px auto 0px;
     width: 80%;
     min-width: 360px;
     height: 2px;
@@ -132,7 +139,8 @@
 
 .example .pages {
     list-style: none;
-    margin: 20px auto;
+    margin: 0 auto 0;
+    margin-top: 4vh;
     padding: 1px 5px;
     text-align: center;
     display: inline-block;
@@ -168,6 +176,13 @@
 .filterFramevork li img {
     vertical-align: middle;
     margin: 1px 2px;
+}
+.filterFramevork .active img:hover {
+    -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    transition: 700ms;
+    border-radius: 100%;
 }
 .border-img {
     border: 1px solid grey;

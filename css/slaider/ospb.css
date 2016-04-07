@@ -420,7 +420,8 @@ ul.grid li a:hover { color: #fff; background: #d95b5b; }
 /* Sets the page width */
 /*.pagespan { max-width: 1140px; }*/
 .pagespan { width: 100%;
-    padding-top: 40px;
+    /*padding-top: 40px;*/
+    padding-top: 8vh;
 }
 
 /* Header */

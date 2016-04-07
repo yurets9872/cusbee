@@ -28,6 +28,7 @@
   <link rel="stylesheet" href="css/slaider/main.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/loaders.css">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/media.css">
 
@@ -36,7 +37,8 @@
   <script src="node_modules/angular/angular.min.js"></script>
   <script src="node_modules/angular-route/angular-route.min.js"></script>
   <script src="js/controller.js"></script>
-
+  <script src="js/about/jquery.onepage-scroll.js"></script>
+  <script src="js/common.js"></script>
 </head>
 <body ng-controller="mainCtrl as main" ng-class="{'notFlow': bodyCss}">
   <div class="sidebar" ng-class="{'active': main.slider}">
@@ -51,13 +53,13 @@
           <li ng-click="main.slider = !main.slider"><a href="#/contact">Get in touch</a></li>
         </ul>
         <div class="calculator">
-           <a href="http://makedream.pythonanywhere.com" target="_blank">Calculator</a>
+           <a href="views/Team-Builder/builder.html" target="_blank">Calculator</a>
         </div>
       </div>
       <div class="right-block">
         <div class="number">
           <span>office@website.com</span>
-          <p>(912)545-1234</p>
+          <p>(912)555-1234</p>
         </div>
         <div class="social">
           <a href="https://www.facebook.com/cusbee"><i class="fa fa-facebook"></i></a>
@@ -71,7 +73,7 @@
     </div>
     </div>
   </div>
-  <ng-view></ng-view>
+  <ng-view ng-cloak="myCloak"></ng-view>
 
 </body>
 </html>

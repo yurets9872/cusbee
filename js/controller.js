@@ -145,7 +145,7 @@ cus.controller('aboutCtrl', function($scope,$rootScope){
             rel:"stylesheet",href: 'css/about/onepage-scroll.css'
         }),
         elem3 = $('<script/>',{
-            src: 'js/jquery.min.js'
+            src: 'js/about/jquery.onepage-scroll.js'
         }),
         elem4 = $('<script/>',{
             src: 'js/about/jquery.spincrement.js'
@@ -156,12 +156,31 @@ cus.controller('aboutCtrl', function($scope,$rootScope){
         title: "ABOUT US"
     };
     $rootScope.bodyCss = false;
-    
+
+        paralaxOn();
+
+        $(".main").onepage_scroll({
+            sectionContainer: "section",
+            easing: "ease",
+            animationTime: 1000,
+            pagination: true,
+            updateURL: false,
+            keyboard: true,
+            beforeMove: null,
+            afterMove: null,
+            loop: true,
+            responsiveFallback: false,
+            direction : 'vertical'
+        });
 
 });
 cus.controller('workCtrl', function($scope,$rootScope){
+    
+        $scope.dataLoaded = false;
+
+
     var elem = $('<link/>',{
-            rel:"stylesheet",href: ''
+            rel:"stylesheet",href: 'css/loaders.css'
         }),
         elem2 = $('<script/>',{
             src: 'js/slaider/main-min.js'
@@ -175,11 +194,17 @@ cus.controller('workCtrl', function($scope,$rootScope){
 
     $('ng-view').append(elem).append(elem2).append(elem3).append(elem4);
 
+
+
     sliderload();
+
     $scope.page = {
         title: "WE CREATE"
     };
     $rootScope.bodyCss = false;
+
+    $scope.dataLoaded = true;
+    
 });
 cus.controller('serviceCtrl', function($scope){
     var elem = $('<script/>',{
