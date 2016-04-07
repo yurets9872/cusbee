@@ -4,7 +4,7 @@
   <div class="logo">
     <a href="#/"><img src="img/logo-cusbee.png" alt="logo-cusbee"></a>
   </div>
-  <div class="builder hidden-phone"><a href="http://makedream.pythonanywhere.com" target="_blank">Team Builder</a></div>
+  <div class="builder hidden-phone"><a href="views/Team-Builder/builder.html" target="_blank">Team Builder</a></div>
   <a href="#" class="hidden-laptop"><img src="img/phone/add_user.png"  alt="builder"></a>
   <div class="navigation hidden-phone">
     <a href="#/technologies"><img src="img/slaider/seting-slaid/left.png" alt="left"></a>
@@ -12,7 +12,7 @@
     <a href="#/about"><img src="img/slaider/seting-slaid/rigth.png" alt="next"></a>
   </div>
 </div>
-<div class="workBg">
+<div class="workBg" ng-show="dataLoaded">
   <div id="example" class="example pagespan">
     <div class="frame" style="overflow: hidden;">
       <ul>
@@ -144,3 +144,13 @@
   </div>
 </div>
 
+<div class="preloader"style="position: absolute;top: 50%;left: 50%;right: 50%;" ng-hide="dataLoaded">
+  <div class="loader">
+    <div class="loader-inner ball-spin-fade-loader">
+      <div></div>
+      <div></div><div></div>
+      <div></div><div></div>
+      <div></div><div></div>
+      <div></div></div>
+  </div>
+</div>
