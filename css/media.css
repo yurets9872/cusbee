@@ -1544,16 +1544,20 @@
         margin-top: 80px;
     }
     #example{
-        padding-top: 140px;
+        padding-top: 200px;
     }
     .example .frame ul li a {
         padding: 20px;
     }
     .example .frame ul li .framevork {
-        left: 135px;
+        left: 150px;
+        top: 50%;
     }
     .example .pages {
         margin: 100px auto 0px;
+    }
+    .example .scrollbar {
+        margin: 50px auto 0px;
     }
     .cd-section h2 {
         margin-top: 145px !important;
