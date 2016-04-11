@@ -1,10 +1,9 @@
-
 <div class="menu work about">
     <button ng-click="(main.slider = !main.slider)" id="clickButton"><i class="fa fa-bars fa-lg"></i></button>
     <div class="logo">
         <a href="#/"><img src="img/logo-cusbee.png" alt="logo-cusbee"></a>
     </div>
-    <div class="builder"><a href="http://makedream.pythonanywhere.com" target="_blank">Team Builder</a></div>
+    <div class="builder"><a href="views/Team-Builder/builder.html" target="_blank">Team Builder</a></div>
     <div class="navigation">
         <a href="#/work"><img src="img/slaider/seting-slaid/left.png" alt=""></a>
         <span>{{page.title}}</span>
@@ -12,7 +11,7 @@
     </div>
 </div>
 
-<div class="wrapper">
+<div class="wrapper" ng-show="loader">
     <div class="main">
         <section class="page1 video-background">
             <div class="page_container">
@@ -197,5 +196,14 @@
     </div>
 </div>
 
-
+<div class="preloader"style="position: absolute;top: 50%;left: 50%;right: 50%;" ng-hide="loader">
+    <div class="loader">
+        <div class="loader-inner ball-spin-fade-loader">
+            <div></div>
+            <div></div><div></div>
+            <div></div><div></div>
+            <div></div><div></div>
+            <div></div></div>
+    </div>
+</div>
 

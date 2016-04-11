@@ -3,14 +3,14 @@
     <div class="logo">
         <a href="#/"><img src="img/logo-cusbee.png" alt="logo-cusbee"></a>
     </div>
-    <div class="builder"><a href="http://makedream.pythonanywhere.com" target="_blank">Team Builder</a></div>
+    <div class="builder"><a href="views/Team-Builder/builder.html" target="_blank">Team Builder</a></div>
     <div class="navigation">
         <a href="#/technologies"><img src="img/slaider/seting-slaid/left.png" alt=""></a>
         <span>{{page.title}}</span>
         <a href="#/work"><img src="img/slaider/seting-slaid/rigth.png" alt=""></a>
     </div>
 </div>
-<main>
+<main ng-show="loader">
     <section id="cd-team" class="cd-section">
         <div class="cd-container">
             <ul>
@@ -58,7 +58,6 @@
 
     <div class="cd-overlay"></div>
 </main>
-
 <div class="cd-member-bio member-1">
     <div class="cd-bio-content">
         <h1>Meet John Smith</h1>
@@ -81,3 +80,14 @@
     </div> <!-- cd-bio-content -->
 </div> <!-- cd-member-bio -->
 <a href="0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->
+
+<div class="preloader"style="position: absolute;top: 50%;left: 50%;right: 50%;" ng-hide="loader">
+    <div class="loader">
+        <div class="loader-inner ball-spin-fade-loader">
+            <div></div>
+            <div></div><div></div>
+            <div></div><div></div>
+            <div></div><div></div>
+            <div></div></div>
+    </div>
+</div>

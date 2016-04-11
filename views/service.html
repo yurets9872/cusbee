@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="css/service/slide/style.css">
-<div class="wrapper-service">
+<div class="wrapper-service" ng-show="loader">
   <div class="menu work">
     <button ng-click="(main.slider = !main.slider)" id="clickButton"><i class="fa fa-bars fa-lg"></i></button>
     <div class="logo">
       <a href="#/"><img src="img/logo-cusbee.png" alt="logo-cusbee"></a>
     </div>
-    <div class="builder"><a href="http://makedream.pythonanywhere.com" target="_blank">Team Builder</a></div>
+    <div class="builder"><a href="views/Team-Builder/builder.html" target="_blank">Team Builder</a></div>
     <div class="navigation">
       <a href="#/about"><img src="img/slaider/seting-slaid/left.png" alt=""></a>
       <span>{{page.title}}</span>
@@ -178,5 +178,16 @@
       <!--<a href="#0" class="prev-slide" style="background-color: #3a3c47;"><img src="img/slaider/seting-slaid/left.png" alt=""></a>-->
       <!--<a href="#0" class="next-slide" style="background-color: #3a3c47;"><img src="img/slaider/seting-slaid/rigth.png" alt=""></a>-->
     <!--</div>-->
+  </div>
+</div>
+
+<div class="preloader"style="position: absolute;top: 50%;left: 50%;right: 50%;" ng-hide="loader">
+  <div class="loader">
+    <div class="loader-inner ball-spin-fade-loader">
+      <div></div>
+      <div></div><div></div>
+      <div></div><div></div>
+      <div></div><div></div>
+      <div></div></div>
   </div>
 </div>

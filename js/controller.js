@@ -110,6 +110,15 @@ cus.controller('careersCtrl', function($scope,$rootScope){
 
 });
 cus.controller('technologiesCtrl', function($scope,$rootScope){
+
+    $scope.loader = false;
+
+    setTimeout(function () {
+        $scope.loader = true;
+        $scope.$apply();
+        console.log('5cek')
+    }, 2000);
+
     $scope.page = {
         title: "technologies"
     };
@@ -137,6 +146,13 @@ cus.controller('technologiesCtrl', function($scope,$rootScope){
 
 });
 cus.controller('aboutCtrl', function($scope,$rootScope){
+    $scope.loader = false;
+
+    setTimeout(function () {
+        $scope.loader = true;
+        $scope.$apply();
+        console.log('5cek')
+    }, 2000);
 
     var elem = $('<link/>',{
             rel:"stylesheet",href: 'css/about/style.css'
@@ -175,26 +191,26 @@ cus.controller('aboutCtrl', function($scope,$rootScope){
 
 });
 cus.controller('workCtrl', function($scope,$rootScope){
-    
-        $scope.dataLoaded = false;
 
+        $scope.loader = false;
 
-    var elem = $('<link/>',{
-            rel:"stylesheet",href: 'css/loaders.css'
-        }),
-        elem2 = $('<script/>',{
+        setTimeout(function () {
+            $scope.loader = true;
+            $scope.$apply();
+            console.log('5cek')
+        }, 2000);
+
+    var elem = $('<script/>',{
             src: 'js/slaider/main-min.js'
         }),
-        elem3 = $('<script/>',{
+        elem2 = $('<script/>',{
             src: 'js/slaider/sly.js'
         }),
-        elem4 = $('<script/>',{
+        elem3 = $('<script/>',{
             src: 'js/slaider/modernizr.js'
         });
 
-    $('ng-view').append(elem).append(elem2).append(elem3).append(elem4);
-
-
+    $('ng-view').append(elem).append(elem2).append(elem3);
 
     sliderload();
 
@@ -203,10 +219,25 @@ cus.controller('workCtrl', function($scope,$rootScope){
     };
     $rootScope.bodyCss = false;
 
-    $scope.dataLoaded = true;
+
+
+
+    $scope.showMap = true;
+    $scope.page = {
+        title: "GET CONECTED"
+    };
     
 });
 cus.controller('serviceCtrl', function($scope){
+
+    $scope.loader = false;
+
+    setTimeout(function () {
+        $scope.loader = true;
+        $scope.$apply();
+        console.log('5cek')
+    }, 5000);
+
     var elem = $('<script/>',{
             src: 'js/service/main-min.js'
         });
@@ -219,6 +250,14 @@ cus.controller('serviceCtrl', function($scope){
     };
 });
 cus.controller('contactCtrl', function($scope){
+    $scope.loader = false;
+
+    setTimeout(function () {
+        $scope.loader = true;
+        $scope.$apply();
+        console.log('5cek')
+    }, 5000);
+
     var map = $('<script/>',{
             src: 'http://maps.google.com/maps/api/js?sensor=false'
         });
