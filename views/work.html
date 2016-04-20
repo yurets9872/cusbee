@@ -12,7 +12,7 @@
     <a href="#/about"><img src="img/slaider/seting-slaid/rigth.png" alt="next"></a>
   </div>
 </div>
-<div class="workBg" ng-show="dataLoaded">
+<div class="workBg" ng-show="loader">
   <div id="example" class="example pagespan">
     <div class="frame" style="overflow: hidden;">
       <ul>
@@ -129,7 +129,7 @@
           <img src="img/slaider/seting-slaid/rigth.png"/>
         </li>
         <li class="slideLi">
-          <img src="img/slaider/seting-slaid/clock.png"style="margin: 1px 6px; width:30px;"/>
+          <img src="img/slaider/seting-slaid/clock.png"style="margin: 1px 2px;"/>
           <img src="img/slaider/seting-slaid/first-slaid.png" class="activateSlider" data-id="0"/>
           <img src="img/slaider/seting-slaid/last-slaid.png" class="activateSlider" data-id="13"/>
         </li>
@@ -144,7 +144,7 @@
   </div>
 </div>
 
-<div class="preloader"style="position: absolute;top: 50%;left: 50%;right: 50%;" ng-hide="dataLoaded">
+<div class="preloader"style="position: absolute;top: 50%;left: 50%;right: 50%;" ng-hide="loader">
   <div class="loader">
     <div class="loader-inner ball-spin-fade-loader">
       <div></div>

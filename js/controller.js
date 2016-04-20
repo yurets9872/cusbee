@@ -1,5 +1,5 @@
 "use strict";
-var cus = angular.module('cus', ['ngRoute']);
+var cus = angular.module('cus', ['ngRoute','br.fullpage']);
 cus.config(['$routeProvider','$locationProvider', function($routeProvider){
 
     $routeProvider
@@ -110,6 +110,14 @@ cus.controller('careersCtrl', function($scope,$rootScope){
 
 });
 cus.controller('technologiesCtrl', function($scope,$rootScope){
+
+    $scope.loader = false;
+
+    setTimeout(function () {
+        $scope.loader = true;
+        $scope.$apply();
+    }, 2000);
+
     $scope.page = {
         title: "technologies"
     };
@@ -137,64 +145,52 @@ cus.controller('technologiesCtrl', function($scope,$rootScope){
 
 });
 cus.controller('aboutCtrl', function($scope,$rootScope){
+    $scope.loader = false;
+
+    setTimeout(function () {
+        $scope.loader = true;
+        $scope.$apply();
+    }, 2000);
 
     var elem = $('<link/>',{
-            rel:"stylesheet",href: 'css/about/style.css'
+            rel:"stylesheet",href: ''
         }),
         elem2 = $('<link/>',{
-            rel:"stylesheet",href: 'css/about/onepage-scroll.css'
+            rel:"stylesheet",href: 'css/about/style.css'
         }),
         elem3 = $('<script/>',{
-            src: 'js/about/jquery.onepage-scroll.js'
-        }),
-        elem4 = $('<script/>',{
             src: 'js/about/jquery.spincrement.js'
         });
-    $('ng-view').append(elem).append(elem2).append(elem3).append(elem4);
+    $('ng-view').append(elem).append(elem2).append(elem3);
 
     $scope.page = {
         title: "ABOUT US"
     };
     $rootScope.bodyCss = false;
 
-        paralaxOn();
 
-        $(".main").onepage_scroll({
-            sectionContainer: "section",
-            easing: "ease",
-            animationTime: 1000,
-            pagination: true,
-            updateURL: false,
-            keyboard: true,
-            beforeMove: null,
-            afterMove: null,
-            loop: true,
-            responsiveFallback: false,
-            direction : 'vertical'
-        });
 
 });
 cus.controller('workCtrl', function($scope,$rootScope){
-    
-        $scope.dataLoaded = false;
 
+        $scope.loader = false;
 
-    var elem = $('<link/>',{
-            rel:"stylesheet",href: 'css/loaders.css'
-        }),
-        elem2 = $('<script/>',{
+        setTimeout(function () {
+            $scope.loader = true;
+            $scope.$apply();
+        }, 2000);
+
+    var elem = $('<script/>',{
             src: 'js/slaider/main-min.js'
         }),
-        elem3 = $('<script/>',{
+        elem2 = $('<script/>',{
             src: 'js/slaider/sly.js'
         }),
-        elem4 = $('<script/>',{
+        elem3 = $('<script/>',{
             src: 'js/slaider/modernizr.js'
         });
 
-    $('ng-view').append(elem).append(elem2).append(elem3).append(elem4);
-
-
+    $('ng-view').append(elem).append(elem2).append(elem3);
 
     sliderload();
 
@@ -203,10 +199,21 @@ cus.controller('workCtrl', function($scope,$rootScope){
     };
     $rootScope.bodyCss = false;
 
-    $scope.dataLoaded = true;
+    $scope.showMap = true;
+    $scope.page = {
+        title: "GET CONECTED"
+    };
     
 });
 cus.controller('serviceCtrl', function($scope){
+
+    $scope.loader = false;
+
+    setTimeout(function () {
+        $scope.loader = true;
+        $scope.$apply();
+    }, 2000);
+
     var elem = $('<script/>',{
             src: 'js/service/main-min.js'
         });
@@ -219,6 +226,13 @@ cus.controller('serviceCtrl', function($scope){
     };
 });
 cus.controller('contactCtrl', function($scope){
+    $scope.loader = false;
+
+    setTimeout(function () {
+        $scope.loader = true;
+        $scope.$apply();
+    }, 2000);
+
     var map = $('<script/>',{
             src: 'http://maps.google.com/maps/api/js?sensor=false'
         });
