@@ -468,10 +468,11 @@ button::before, button::after {
     margin-bottom: 20px;
 }
 .WebDev span {
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 20px;
     display: block;
-    font-family: RobotoLight;
+    font-family: HelveticaLight;
+    line-height: 18px;
     color: #333;
     max-width: 350px;
 }
