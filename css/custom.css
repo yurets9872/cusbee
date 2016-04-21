@@ -584,6 +584,7 @@ button::before, button::after {
     display: inline-block;
     margin-top: 10px;
     font-size: 16px;
+    font-family: HelveticaRegular;
 }
 form {
     margin-top: 30px;
@@ -622,6 +623,7 @@ textarea {
     padding: 10px 20px;
     border-radius: 3px;
     border: 1px solid #A9A9A9;
+    font-family: HelveticaRegular;
 }
 .SendMessage {
     margin-top: 40px;
@@ -704,6 +706,7 @@ button[type="submit"]::before, button[type="submit"]::after {
 .VisitUs p{
     margin-bottom: 0px;
     font-size: 16px;
+    font-family: HelveticaRegular;
 }
 .VisitUs span {
     text-transform: uppercase;
