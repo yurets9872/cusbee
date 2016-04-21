@@ -194,6 +194,7 @@ button::before, button::after {
     text-decoration: none;
     font-size: 44px;
     font-weight: bold;
+    font-family: "HelveticaMedium";
     position: relative;
 }
 .sidebar li a::after {
@@ -364,6 +365,7 @@ button::before, button::after {
 .navigation span {
     font-size: 32px;
     padding:0 20px;
+    font-family: "HelveticaRegular";
 }
 /*style-work*/
 /*style-service*/
@@ -420,7 +422,7 @@ button::before, button::after {
 }
 .blocks-service {
     overflow: hidden;
-    padding-top: 40px;
+    padding-top: 25px;
     padding-left: 50px;
     font-size: 0;
     height: 100%;
@@ -471,7 +473,7 @@ button::before, button::after {
     display: block;
     font-family: RobotoLight;
     color: #333;
-    max-width: 335px;
+    max-width: 350px;
 }
 .WebDev a {
     color: black;
