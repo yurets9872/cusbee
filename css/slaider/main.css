@@ -238,7 +238,7 @@
 .text-slide span:last-child {
     font-size: 17px;
     text-align: center;
-    display: block;
+    display: none;
     font-weight: 100;
     font-family: HelveticaRegular;
 }
