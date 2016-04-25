@@ -408,7 +408,6 @@ button::before, button::after {
 .builder a {
     color: #e47d1f;
     text-decoration: none;
-    font-weight: bold;
 }
 #clickButton {
     float: right;

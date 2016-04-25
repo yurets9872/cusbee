@@ -65,9 +65,9 @@
     opacity: 1;
 }
 .example .frame ul li.active a {
-    -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
-    -moz-box-shadow:    -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
-    box-shadow:         -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
+    -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    -moz-box-shadow:    -1px 3px 5px 0px rgba(50, 50, 50, 0.25);
+    box-shadow:         -1px 3px 5px 0px rgba(50, 50, 50, 0.25);
 }
 
 /*.example .frame img {width: 70%;}*/
@@ -76,6 +76,12 @@
 .example .frame ul li {
     opacity: 0.2;
 }
+.example .frame ul li a{
+    cursor: pointer;
+}
+.example .frame ul li img {
+    max-width: 200px;
+}
 
 .example .frame ul li .framevork {
     position: absolute;
@@ -83,12 +89,12 @@
     left: 115px;
     font-size: 15px;
     background-color: white;
-    height: 42px;
+    height: 45px;
     width: 45px;
     text-align: center;
     border-radius: 30px;
     border: 1px solid #ffaa4a;
-    line-height: 2.7;
+    line-height:45px;
     color: #ffaa4a;
 }
 
@@ -96,7 +102,7 @@
     display: block;
     padding: 5px;
     background-color: #fff;
-    border-radius: 142px;
+    border-radius:50%;
     height: 215px;
     width: 215px;
     line-height: 15;
@@ -177,6 +183,7 @@
     vertical-align: middle;
     margin: 1px 2px;
 }
+/*
 .filterFramevork .active img:hover {
     -webkit-box-shadow: -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
     -moz-box-shadow:    -1px 3px 5px 0px rgba(50, 50, 50, 0.75);
@@ -184,6 +191,7 @@
     transition: 700ms;
     border-radius: 100%;
 }
+*/
 .border-img {
     border: 1px solid grey;
 }
@@ -228,7 +236,9 @@
 }
 
 .text-slide span:last-child {
-    font-size: 16.5px;
+    font-size: 17px;
     text-align: center;
     display: block;
+    font-weight: 100;
+    font-family: HelveticaRegular;
 }
