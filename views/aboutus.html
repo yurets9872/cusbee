@@ -1,0 +1,98 @@
+<div class="menu work technologies-menu">
+    <button ng-click="(main.slider = !main.slider)" id="clickButton"><i class="fa fa-bars fa-lg"></i></button>
+    <div class="logo">
+        <a href="#/"><img src="img/logo-cusbee.png" alt="logo-cusbee"></a>
+    </div>
+    <div class="builder"><a href="views/Team-Builder/builder.html" target="_blank">Team Builder</a></div>
+    <div class="navigation">
+        <a href="#/technologies"><img src="img/slaider/seting-slaid/left.png" alt=""></a>
+        <span>{{page.title}}</span>
+        <a href="#/work"><img src="img/slaider/seting-slaid/rigth.png" alt=""></a>
+    </div>
+</div>
+<main ng-show="loader">
+    <section id="cd-team" class="cd-section">
+        <div class="cd-container">
+            <ul>
+                <li>
+                    <a href="#0" data-type="member-1">
+                        <figure>
+                            <img src="img/technologies/webDev.png" alt="webDev">
+<!--                            <div class="cd-img-overlay"><span>View Bio</span></div>-->
+                        </figure>
+
+                        <div class="cd-member-info">
+                            Web Development 
+<!--                            <span>Microsoft Patch Management For Home Users</span>-->
+                        </div> <!-- cd-member-info -->
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#0" data-type="member-2">
+                        <figure>
+                            <img src="img/technologies/mobDev.png" alt="mobDev">
+<!--                            <div class="cd-img-overlay"><span>View Bio</span></div>-->
+                        </figure>
+
+                        <div class="cd-member-info">
+                           Mobile Development 
+<!--                           <span>Choosing The Best Audio Player Software For Your Computer</span>-->
+                        </div> <!-- cd-member-info -->
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#0" data-type="member-3">
+                        <figure>
+                            <img src="img/technologies/appsDev.png" alt="appsDev">
+<!--                            <div class="cd-img-overlay"><span>View Bio</span></div>-->
+                        </figure>
+
+                        <div class="cd-member-info">
+                            Apps Development 
+<!--                            <span>How Plasma Tvs And Lod Tvs Differ</span>-->
+                        </div> <!-- cd-member-info -->
+                    </a>
+                </li>
+            </ul>
+        </div> <!-- cd-container -->
+    </section> <!-- cd-team -->
+
+    <div class="cd-overlay"></div>
+</main>
+<div class="cd-member-bio member-1">
+    <div class="cd-bio-content">
+        <h1>Web Development</h1>
+        
+        <p>We deal with web development which broadly refers to the tasks associated with developing websites for hosting via Internet. The Web development process includes Web design, Web content development, client-side/server-side scripting and network security configuration, among other tasks. 
+Our team has great and unique experience in web development. All you need to know about Cusbee experts is that we will build, create and maintain websites for you with all necessary aspects such as web design, web publishing, web programming, and database management. The members of our team dealing with front end (Java, Python, PHP, and Ruby) and back end (JavaScript, UI/UX) development. 
+</p>
+    </div> <!-- cd-bio-content -->
+</div> <!-- cd-member-bio -->
+<div class="cd-member-bio member-2">
+    <div class="cd-bio-content">
+        <h1>Mobile Development </h1>
+        
+        <p>If you have a specific idea for a smartphone Cusbee team can realize it on any platform you need: iOS, Android, Windows Mobile, Blackberry OS. We have all of the resources to meet your mobile development needs. We have platform-specific specialists, project managers with a deep understanding of many industries, and years of experience building sustainable, future-proof products. During the planning stage we draft a project development roadmap and we ensure that our team will provide you on all the phases of the project. And to support all that you have just read we always control the quality and functionality of the final product. </p>
+    </div> <!-- cd-bio-content -->
+</div> <!-- cd-member-bio -->
+<div class="cd-member-bio member-3">
+    <div class="cd-bio-content">
+        <h1>Apps Development</h1>
+        
+        <p>Our team is always ready to expand your horizons and we can provide you not only with Mobile Apps development, but we can create for you an exclusive, innovative and functional application for your  Windows, Mac OS. We know exactly what kind of services the clients would like to get. Our experience and style of work allows to look at the app development process from different perspectives, which helps to meet the needs of the customer. Experienced experts of our team will show you creativity, productivity, communication, scalability and transparency working with you on the project. All you need is to trust in us, and you will get our best feedback in your cutting-edge technology application.  </p>
+    </div> <!-- cd-bio-content -->
+</div> <!-- cd-member-bio -->
+<a href="0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->
+
+<div class="preloader"style="position: absolute;top: 50%;left: 50%;right: 50%;" ng-hide="loader">
+    <div class="loader">
+        <div class="loader-inner ball-spin-fade-loader">
+            <div></div>
+            <div></div><div></div>
+            <div></div><div></div>
+            <div></div><div></div>
+            <div></div></div>
+    </div>
+</div>

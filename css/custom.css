@@ -4,7 +4,6 @@
 }
 html, body {
     height: 100%;
-    font-family: 'HelveticaMedium', sans-serif;
     overflow: hidden;
 }
 #wrapper {
@@ -163,7 +162,7 @@ button::before, button::after {
     top: 0;
     color: white;
     left: 0;
-    z-index: 99;
+    z-index: 199;
     -webkit-transition: .3s ease-in;
     -moz-transition: .3s ease-in;
     -ms-transition: .3s ease-in;
@@ -262,7 +261,7 @@ button::before, button::after {
 }
 .blog {
     text-transform: uppercase;
-    margin-top: 257px;
+    margin-top: 110px;
 }
 .blog a {
     display: block;
@@ -277,7 +276,7 @@ button::before, button::after {
     margin-bottom: 10px;
     margin-top: 79px;
     border: 1px solid white;
-    display: inline-block;
+    display: none;
     border-radius: 3px;
     -webkit-transition: 500ms;
     -moz-transition: 500ms;
@@ -363,9 +362,9 @@ button::before, button::after {
     vertical-align: middle;
 }
 .navigation span {
-    font-size: 32px;
-    padding:0 20px;
-    font-family: "HelveticaRegular";
+    font-size: 26px;
+    padding: 0 20px;
+    font-family: "HelveticaMedium";
 }
 /*style-work*/
 /*style-service*/
@@ -393,6 +392,9 @@ button::before, button::after {
 .work .navigation {
     margin-top: 15px;
 }
+.work .navigation a{
+    display: none;
+}
 .navigation * {
     vertical-align: middle;
     width: 8px;
@@ -404,6 +406,7 @@ button::before, button::after {
     margin-top: 25px;
     font-size: 16px;
     text-transform: uppercase;
+    display: none;
 }
 .builder a {
     color: #e47d1f;
@@ -545,6 +548,9 @@ button::before, button::after {
     display: inline-block;
     vertical-align: top;
 }
+.navigation-service a{
+    display: none;
+}
 .navigation-service * {
     vertical-align: middle;
     width: 8px;
@@ -685,7 +691,7 @@ button[type="submit"]::before, button[type="submit"]::after {
 }
 .contactTeam .TeamBuilder {
     margin-top: 17px;
-    display: inline-block;
+    display: none;
 
 }
 .contactTeam #clickButton {
